@@ -1,5 +1,9 @@
 # HMRC timline
 
+## Demo
+
+[View the demo](https://hmrc-timeline.netlify.com/)
+
 ## Nunjucks
 
 ```
