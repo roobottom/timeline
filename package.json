@@ -1,0 +1,31 @@
+{
+  "name": "hmrc-timeline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx gulp",
+    "build": "npx gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roobottom/hmrc-timeline.git"
+  },
+  "author": "Jonathan Roobottom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roobottom/hmrc-timeline/issues"
+  },
+  "homepage": "https://github.com/roobottom/hmrc-timeline#readme",
+  "dependencies": {
+    "govuk-frontend": "^3.3.0",
+    "nunjucks": "^3.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-nunjucks": "^5.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  }
+}

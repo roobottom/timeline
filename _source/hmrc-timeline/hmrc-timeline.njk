@@ -1,0 +1,12 @@
+<ol class="hmrc-timeline">
+  {% for event in params.events -%}
+  <li class="hmrc-timeline-event">
+    <h2 class="hmrc-timeline-event-title govuk-heading-m">{{ event.title }}</h2>
+    <p class="hmrc-timeline-event-meta">
+      <span class="govuk-visually-hidden">{{ event.title }} on</span>
+      <time class="hmrc-timeline-event-time" {% if event.machineTime %}datetime="{{ event.machineTime }}"{% endif %}>{{ event.time }}</time>
+    </p>
+    {{ event.content | safe }}
+  </li>
+  {%- endfor %}
+</ol>
