@@ -1,0 +1,11 @@
+<ol class="timeline">
+  {% for event in params.events -%}
+  <li class="timeline-event">
+    <h2 class="timeline-event-title">{{ event.title }}</h2>
+    <span class="timeline-event-meta">{{ event.time }}</span>
+    <div class="timeline-event-content">
+      {{ event.content | safe }}
+    </div>
+  </li>
+  {%- endfor %}
+</ol>

@@ -1,17 +1,17 @@
-{% from "hmrc-timeline/macro.njk" import hmrcTimeline %}
+{% from "timeline/macro.njk" import timeline %}
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HMRC Timeline GOVUK component candidate</title>
+  <title>Timeline GOV.UK component candidate</title>
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
   {% set exampleContent %}
   <p>Everyone loves port-salut taleggio. Lancashire hard cheese the big cheese taleggio cheddar cheese slices fromage bavarian bergkase. Red leicester macaroni cheese port-salut cheese strings bocconcini cow halloumi smelly cheese. Dolcelatte edam danish fontina the big cheese blue castello cheeseburger.</p>
   {% endset %}
-  {{ hmrcTimeline({
+  {{ timeline({
     events: [
       {
         title: 'Something else happened',

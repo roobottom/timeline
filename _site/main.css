@@ -198,7 +198,7 @@
     .govuk-heading-l {
       margin-bottom: 30px; } }
 
-.govuk-heading-m {
+.govuk-heading-m, .timeline-event-title {
   color: #0b0c0c;
   font-family: "GDS Transport", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -211,22 +211,22 @@
   margin-top: 0;
   margin-bottom: 15px; }
   @media print {
-    .govuk-heading-m {
+    .govuk-heading-m, .timeline-event-title {
       color: #000000; } }
   @media print {
-    .govuk-heading-m {
+    .govuk-heading-m, .timeline-event-title {
       font-family: sans-serif; } }
   @media (min-width: 40.0625em) {
-    .govuk-heading-m {
+    .govuk-heading-m, .timeline-event-title {
       font-size: 24px;
       font-size: 1.5rem;
       line-height: 1.25; } }
   @media print {
-    .govuk-heading-m {
+    .govuk-heading-m, .timeline-event-title {
       font-size: 18pt;
       line-height: 1.15; } }
   @media (min-width: 40.0625em) {
-    .govuk-heading-m {
+    .govuk-heading-m, .timeline-event-title {
       margin-bottom: 20px; } }
 
 .govuk-heading-s {
@@ -470,9 +470,11 @@
     .govuk-list + .govuk-heading-l {
       padding-top: 20px; } }
 
-.govuk-body-m + .govuk-heading-m, .govuk-body + .govuk-heading-m, p + .govuk-heading-m,
+.govuk-body-m + .govuk-heading-m, .govuk-body + .govuk-heading-m, p + .govuk-heading-m, .govuk-body-m + .timeline-event-title, .govuk-body + .timeline-event-title, p + .timeline-event-title,
 .govuk-body-s + .govuk-heading-m,
+.govuk-body-s + .timeline-event-title,
 .govuk-list + .govuk-heading-m,
+.govuk-list + .timeline-event-title,
 .govuk-body-m + .govuk-heading-s,
 .govuk-body + .govuk-heading-s,
 p + .govuk-heading-s,
@@ -480,9 +482,11 @@ p + .govuk-heading-s,
 .govuk-list + .govuk-heading-s {
   padding-top: 5px; }
   @media (min-width: 40.0625em) {
-    .govuk-body-m + .govuk-heading-m, .govuk-body + .govuk-heading-m, p + .govuk-heading-m,
+    .govuk-body-m + .govuk-heading-m, .govuk-body + .govuk-heading-m, p + .govuk-heading-m, .govuk-body-m + .timeline-event-title, .govuk-body + .timeline-event-title, p + .timeline-event-title,
     .govuk-body-s + .govuk-heading-m,
+    .govuk-body-s + .timeline-event-title,
     .govuk-list + .govuk-heading-m,
+    .govuk-list + .timeline-event-title,
     .govuk-body-m + .govuk-heading-s,
     .govuk-body + .govuk-heading-s,
     p + .govuk-heading-s,
@@ -4329,32 +4333,60 @@ p + .govuk-heading-s,
     .govuk-\!-width-one-quarter {
       width: 25% !important; } }
 
-.hmrc-timeline {
+.timeline {
   border-left: 3px solid #1d70b8;
   margin: 0;
   padding: 0; }
-  .hmrc-timeline-event {
+  .timeline-event {
     padding-bottom: 20px;
     padding-left: 20px;
     position: relative;
     list-style: none; }
     @media (min-width: 40.0625em) {
-      .hmrc-timeline-event {
+      .timeline-event {
         padding-bottom: 30px; } }
-    .hmrc-timeline-event:last-child {
+    .timeline-event:last-child {
       padding-bottom: 0; }
-  .hmrc-timeline-event-title {
+  .timeline-event-title {
     margin-bottom: 5px; }
     @media (min-width: 40.0625em) {
-      .hmrc-timeline-event-title {
+      .timeline-event-title {
         margin-bottom: 5px; } }
-    .hmrc-timeline-event-title:before {
+    .timeline-event-title:before {
       background-color: #1d70b8;
-      content: '';
+      content: "";
       height: 3px;
       left: 0;
       top: .5em;
       position: absolute;
       width: 12px; }
-  .hmrc-timeline-event-meta {
+  .timeline-event-meta {
     display: block; }
+  .timeline-event-meta {
+    font-family: "GDS Transport", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #0b0c0c;
+    margin-bottom: 15px; }
+    @media print {
+      .timeline-event-meta {
+        font-family: sans-serif; } }
+    @media (min-width: 40.0625em) {
+      .timeline-event-meta {
+        font-size: 19px;
+        font-size: 1.1875rem;
+        line-height: 1.31579; } }
+    @media print {
+      .timeline-event-meta {
+        font-size: 14pt;
+        line-height: 1.15; } }
+    @media print {
+      .timeline-event-meta {
+        color: #000000; } }
+    @media (min-width: 40.0625em) {
+      .timeline-event-meta {
+        margin-bottom: 15px; } }
